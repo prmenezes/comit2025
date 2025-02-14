@@ -1,7 +1,20 @@
-_cart = []
+from random import Random
 
-def add_item_to_cart(item):
-     _cart.append(item)
+#_cart = []
 
-def get_cart(): 
-     return _cart   
+_carts: dict[str, list] = {}
+_is_private = []
+
+def make_new_cart():
+     id = str(Random().randint(0, 9999999999))
+     _carts[id] = []
+     return id
+
+def add_item_to_cart(cart_id, item):
+     _carts[cart_id].append(item)
+
+def get_cart(cart_id): 
+     return _carts[cart_id]   
+
+def is_private(cart_id):
+     return cart_id in _is_private
