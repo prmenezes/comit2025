@@ -53,6 +53,6 @@ def welcome_prompt():
     print("Please select an item to purchase:")
 
 
-# def goodbye_message(cart_total):
-#     print("Total is ", cart_total)
-#     print("Thank you, come again!")
+def goodbye_message(cart_total):
+    print("Total is ", cart_total)
+    print("Thank you, come again!")

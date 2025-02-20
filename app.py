@@ -58,15 +58,14 @@ while True:
     
     cart1.add_item_to_cart(product)
 
+# display cart 
 cart1.print_cart()
 #cart_total = cli.print_inventory(cart.get_cart())
 #cli.goodbye_message(cart_total)
 
 
-# display cart 
-
-
 # display cart total
+cli.goodbye_message(cart1.get_cart_total())
 
 
 
