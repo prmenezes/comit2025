@@ -8,10 +8,13 @@ class Inventory:
         self.items.append(item)
         
     def print_inventory(self):
-        index = 1
-        for item in self.items:
+        # index = 1
+        # for item in self.items:
+        #     print(f'{index}. {item.get_item()}')
+        #     index += 1
+
+        for index, item in enumerate(self.items, start =1):
             print(f'{index}. {item.get_item()}')
-            index += 1
 
     def get_number_of_items_in_inventory(self):
         return len(self.items)

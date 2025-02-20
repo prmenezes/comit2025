@@ -10,16 +10,37 @@ from store import cli
 cli.welcome_prompt()
 
 # create inventory 
-item1 = Item("Gatorade", 4.99)
-item2 = Item("Nintendo Switch", 999.99)
+# item1 = Item("Gatorade", 4.99)
+# item2 = Item("Nintendo Switch", 999.99)
+
+_inventory = [
+    ("Nintendo Switch 2", 999.99),
+    ("BBQ Chips", 3.50),
+    ("Pokemon Booster: Flaming Tides", 7.00),
+    ("Gatorade", 5.00),
+    ("Milk", 4.99),
+    ("Advil", 9.99),
+    ("Cat Fud", 49.99)
+]
 
 # Write logic to get _inventory (list of tuples) and create an item object for each product in the inventory
+# items = []
+# for item in _inventory:
+#     items.append(Item(item[0], item[1]))
+
+# Create a list of Item objects
+items = [ Item(name, price) for name, price in _inventory]
+
 
 inventory1 = Inventory()
 
 # Write a loop to add item objects from _inventory to inventory1
-inventory1.add_items(item1)
-inventory1.add_items(item2)
+# inventory1.add_items(item1)
+# inventory1.add_items(item2)
+
+for item in items:
+    inventory1.add_items(item)
+
 # print inventory 
 inventory1.print_inventory()
 
