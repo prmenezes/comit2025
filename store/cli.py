@@ -1,3 +1,4 @@
+import CartItem
 def get_selection(inventory: list[tuple[str, float]]) -> tuple[str, float] | None:
     """_summary_
 
@@ -8,6 +9,8 @@ def get_selection(inventory: list[tuple[str, float]]) -> tuple[str, float] | Non
     Returns:
         tuple[str, float] | None: _description_
     """
+
+   
     while True:
         user_selection = input(
             "Enter 'C' to checkout or select item number from above: "
@@ -32,7 +35,7 @@ def get_selection(inventory: list[tuple[str, float]]) -> tuple[str, float] | Non
         return inventory[selected_index]
 
 
-def print_inventory(inventory: list[tuple[str, float]]) -> float:
+def print_inventory(inventory: list[CartItem]) -> float:
     """Prints a list of inventory to the console
 
     Args:
