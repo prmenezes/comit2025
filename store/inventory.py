@@ -1,19 +1,4 @@
-<<<<<<< HEAD
 
-_inventory = [
-    ("Nintendo Switch 2", 999.99),
-    ("BBQ Chips", 3.50),
-    ("Pokemon Booster: Flaming Tides", 7.00),
-    ("Gaterade", 5.00),
-    ("Milk", 4.99),
-    ("Advil", 9.99),
-    ("Cat Fud", 49.99)
-]
-
-
-def get_inventory():
-     return _inventory
-=======
 from uuid import uuid4
 
 
@@ -61,6 +46,3 @@ _inventory = [
 # Helper function to return what other modules expect
 def get_inventory() -> list[tuple[str, float]]:
     return [(item.name, item.price) for item in _inventory]
-
-    
->>>>>>> case_for_oop_branch_changes

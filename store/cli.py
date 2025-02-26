@@ -1,4 +1,4 @@
-import CartItem
+import cart
 def get_selection(inventory: list[tuple[str, float]]) -> tuple[str, float] | None:
     """_summary_
 
@@ -35,7 +35,7 @@ def get_selection(inventory: list[tuple[str, float]]) -> tuple[str, float] | Non
         return inventory[selected_index]
 
 
-def print_inventory(inventory: list[CartItem]) -> float:
+def print_inventory(inventory: list[cart.CartItem]) -> float:
     """Prints a list of inventory to the console
 
     Args:
