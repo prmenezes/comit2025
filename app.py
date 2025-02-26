@@ -34,6 +34,6 @@ for CART in cart_list:
 
 # cart_total = cli.print_inventory(cart.get_cart(CART1))
 # cart_total2 = cli.print_inventory(cart.get_cart(CART2))
-cart_total = cli.print_inventory(cart.get_cart(CART1))
+cart_total = cli.print_inventory(Cart.cart.get_cart(CART))
 cli.goodbye_message(cart_total)
 #cli.goodbye_message(cart_total2)

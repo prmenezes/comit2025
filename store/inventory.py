@@ -45,3 +45,5 @@ _inventory = [
 # Helper function to return what other modules expect
 def get_inventory() -> list[tuple[str, float]]:
     return [(item.name, item.price) for item in _inventory]
+
+    
