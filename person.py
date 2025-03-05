@@ -1,3 +1,5 @@
+from people.contact import ContactMixin
+
 class Person:
     """ A person"""
 
@@ -18,9 +20,9 @@ class Person:
         return f"{self.first_name} {self.last_name}"
 
     def full_name(self) -> str:
-        return f"First Name: {self.first_name} Last Name: {self.last_name}"
+        return f"First Name: {self.first_name}, Last Name: {self.last_name}"
     
-class Student(Person):
+class Student(ContactMixin, Person):
     def __init__(self, f_name, l_name, student_number: int):
         """Class representing a person
 
@@ -29,11 +31,14 @@ class Student(Person):
             l_name (str): last name
             student_number(int): Student number
         """
-        super().__init__(f_name, l_name)
+        super().__init__(f"{f_name} {l_name}", f_name = f_name, l_name = l_name)
         self.sn = student_number
 
     def __str__(self):
-        return f"Student number {self.sn} -> {super().__str__()}"
+
+        return f"{self.full_name()} \nAddress: {self.street}, {self.city}, {self.province}"
+        #Student number {self.sn} -> {super().__str__()}"
+    
 
     
     

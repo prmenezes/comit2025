@@ -11,15 +11,20 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "$PYTHONPATH:${workspaceFolder}"
+            }
         }, 
-        {
-            "name": "Main",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${workspaceFolder}/main.py",
-            "console": "integratedTerminal"
-        }, 
+        // {
+        //     "name": "Main",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     //"program": "${workspaceFolder}/main.py",
+        //     "program": "${file}",
+        //     "console": "integratedTerminal",
+            
+        // }, 
 
     ]
 }
