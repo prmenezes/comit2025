@@ -1,0 +1,8 @@
+beautifulsoup4==4.13.3
+soupsieve==2.6
+typing_extensions==4.12.2
+# edit to replcae * instead of 3 etc
+
+# * = minor security patches
+# 13 = enhancements and features, may break the sw
+# 4 = major changes, no backward compatibility guaranteed + may have code breakages 

@@ -1,7 +1,7 @@
 """An example of how to create a command line selection process for a fictional storefront."""
 
 from store import inventory
-from store.cart import Cart
+from store import cart
 from store import cli
 
 # Prompt user to enter selection

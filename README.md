@@ -1,5 +1,11 @@
 # comit2025
+Collection of python examples
 
+## Dependencies
+Dependencies are listed in `requirements.txt`. To install:
+```
+pip3 install -r  web/requirements.txt 
+```
 
 
 ## Store
