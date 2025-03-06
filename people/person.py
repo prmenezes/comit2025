@@ -1,4 +1,4 @@
-from people.contact import ContactMixin
+from contact import ContactMixin
 
 class Person:
     """ A person"""
